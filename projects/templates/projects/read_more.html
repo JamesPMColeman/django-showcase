@@ -9,9 +9,8 @@
 </head>
 <body>
 <div class="container">
-	<h1>Projects</h1>
+	<h1>{{ project.title }}</h1>
 	<div class="row">
-	{% for project in projects %}
 		<div class="col-md-4">
 			<div class="card mb-2">
 				<img class="card-img-top" src="{% static project.image %}" alt="screenshot of project">
@@ -19,13 +18,10 @@
 					<h5 class="card-title">{{ project.title }}</h5>
 					<p class="card-text">{{ project.description }}</p>
 					<p class="card-text">{{ project.technology }}</p>
-					<a href="#" class="btn btn-primary">Read More</a>
 				</div>
 			</div>
 		</div>
-	{% endfor %}
 	</div>
 </div>
 </body>
 </html>
-	

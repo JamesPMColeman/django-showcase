@@ -4,5 +4,5 @@ from projects import views
 
 urlpatterns = [
 	path('', views.all_projects),
-    path('test', views.project_list),
+    path('<int:primary_key>', views.project_page)
 ]
